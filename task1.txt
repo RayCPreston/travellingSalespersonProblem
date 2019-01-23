@@ -1,0 +1,10 @@
+Task 1: Answer the following questions:
+
+    1)  What is the travelling salesman problem?
+    The travelling salesman problem is a classic mathematical problem in which one must solve the following.  Given a list of cities (or other destination) and the cost in distance to between each of the cities, solve the shortest route to visit all of the cities or locations and arrive back at the starting location.  This also can be represented by a Minimum Spanning Tree problem.
+
+    2)  What are some application of solving the travelling salesman problem?
+    There are plenty of applications cited by the accompanying document.  The route a warehouse to take to fill an order without taking extraneous routes.  Drilling holes in circuit boards, and overhauling gas turbines.  One example I have worked with personally is being a route driver for Miller Lite.  Every employee that stocks Miller on shelves throughout the city is given a route that makes optimal use of the employees time.  A computer runs the travelling salesman problem algorithm to determine the best route for the employee to take to use the smallest amount of gas and the shortest amount of time to restock the shelves with Miller products.
+
+    3)  According to the solution approaches in the paper, which technique will you use to sole the travelling salesman problem posed in Task 2?
+        The technique I will use to solve the problem will be the greedy algorithm, which the paper states will keep in the 15-20% Held-Karp lower bound.  The technique makes use of the number of nodes/cities and the number of edges/routes between them.  The algorithm will sort all edges, then select the shortest edge available from the node currently at.  If there are n nodes, the algorithm will continue to work until the full route contains n edges.  The other constraint will be to make sure the number of routes coming from a node does not exceed 2.  If this constraint is broken, it means, the salesman will have visited that node more than one time.  The same edge can not be used more than one time, obviously, or the degree of the node will be violated.
